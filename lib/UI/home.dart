@@ -455,6 +455,7 @@ class _HomePageState extends State<HomePage> {
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(50),
+              // image: DecorationImage(image: NetworkImage(url)),
               boxShadow: const [
                 BoxShadow(
                     color: Colors.purple,
@@ -489,6 +490,11 @@ class _HomePageState extends State<HomePage> {
                 FloatingActionButton(
                   onPressed: _showQuote,
                   child: const Icon(Icons.lightbulb),
+                ),
+                FloatingActionButton(
+                  
+                  onPressed: _showQuote,
+                  child: const Icon(Icons.share),
                 )
               ],
             ),
