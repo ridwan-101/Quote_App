@@ -492,7 +492,6 @@ class _HomePageState extends State<HomePage> {
                   child: const Icon(Icons.lightbulb),
                 ),
                 FloatingActionButton(
-                  
                   onPressed: _showQuote,
                   child: const Icon(Icons.share),
                 )
