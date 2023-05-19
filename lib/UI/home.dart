@@ -441,7 +441,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "Daily Motivation",
+          "Daily Quote's",
           style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
@@ -450,7 +450,7 @@ class _HomePageState extends State<HomePage> {
         color: Colors.grey.shade600,
         child: Center(
           child: Container(
-            height: 500,
+            height: 400,
             width: 380,
             decoration: BoxDecoration(
               color: Colors.white,
@@ -473,16 +473,17 @@ class _HomePageState extends State<HomePage> {
               children: <Widget>[
                 Text(
                   '- ${quotesList[_index % quotesList.length]['quote'] ?? 'Anonymous'}',
-                  style: TextStyle(fontSize: 20),
+                  style: const TextStyle(fontSize: 20),
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 20),
                 Text(
                   '- ${quotesList[_index % quotesList.length]['author'] ?? 'Anonymous'}',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  style: const TextStyle(
+                      fontSize: 16, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 40,
                 ),
                 FloatingActionButton(
