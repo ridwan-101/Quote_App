@@ -455,7 +455,7 @@ class _HomePageState extends State<HomePage> {
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(50),
-              image: DecorationImage(
+              image: const DecorationImage(
                   image:
                       NetworkImage("https://picsum.photos/seed/picsum/300/300"),
                   fit: BoxFit.cover),
